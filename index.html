@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Afia Anjum Borsha | Software Engineer</title>
+<title>Afia Anjum Borsha | AI Researcher & Security Analyst</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
@@ -56,7 +56,7 @@ nav.scrolled{background:rgba(10,0,16,0.94);backdrop-filter:blur(24px);border-bot
 .e-ring:nth-child(3){animation-delay:1.86s}
 @keyframes e-expand{0%{width:80px;height:80px;opacity:0.7}100%{width:280px;height:280px;opacity:0}}
 .e-inner{text-align:center;position:relative;z-index:2}
-.e-name{font-family:var(--display);font-size:clamp(3rem,10vw,5.5rem);font-weight:800;color:#ffffff;letter-spacing:6px;animation:e-up 0.9s var(--ease-out) 0.3s both;text-shadow:0 0 40px rgba(0,212,255,0.6),0 0 80px rgba(0,212,255,0.28)}
+.e-name{font-family:var(--display);font-size:clamp(2rem,8vw,4.5rem);font-weight:800;color:#ffffff;letter-spacing:4px;animation:e-up 0.9s var(--ease-out) 0.3s both;text-shadow:0 0 40px rgba(0,212,255,0.6),0 0 80px rgba(0,212,255,0.28)}
 .e-sub{font-family:var(--mono);font-size:0.65rem;color:var(--text-m);letter-spacing:4px;text-transform:uppercase;margin-top:0.7rem;animation:e-up 0.9s var(--ease-out) 0.7s both}
 .e-line{width:0;height:1px;margin:1.6rem auto;background:linear-gradient(90deg,transparent,var(--p),var(--acc),transparent);animation:e-bar 1.4s var(--ease-out) 1.1s forwards}
 @keyframes e-bar{to{width:180px}}
@@ -87,8 +87,8 @@ section{position:relative;z-index:3;max-width:1200px;margin:0 auto;padding:6rem 
 .h-tag{display:inline-flex;align-items:center;gap:0.6rem;font-family:var(--mono);font-size:0.6rem;color:var(--acc);letter-spacing:2px;text-transform:uppercase;margin-bottom:1.6rem;padding:0.35rem 1rem;border:1px solid rgba(0,212,255,0.3);border-radius:30px;background:rgba(0,212,255,0.05)}
 .pdot{width:6px;height:6px;border-radius:50%;background:var(--acc);animation:p-pulse 2s infinite}
 @keyframes p-pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,212,255,0.6)}60%{opacity:0.5;box-shadow:0 0 0 8px rgba(0,212,255,0)}}
-.h-name{font-family:var(--display);font-size:clamp(3.2rem,7vw,5.8rem);font-weight:800;line-height:1;color:#ffffff;margin-bottom:1.2rem;letter-spacing:-2px;text-shadow:0 4px 40px rgba(255,255,255,0.1)}
-.h-name span{display:block;color:transparent;-webkit-text-stroke:1.5px var(--acc);font-style:italic;letter-spacing:-1px;text-shadow:none;margin-top:0.1rem}
+.h-name{font-family:var(--display);font-size:clamp(2.4rem,5.5vw,4.8rem);font-weight:800;line-height:1;color:#ffffff;margin-bottom:1.2rem;letter-spacing:-2px;text-shadow:0 4px 40px rgba(255,255,255,0.1)}
+.h-name span{display:block;color:transparent;-webkit-text-stroke:1.5px var(--acc);font-style:italic;letter-spacing:-1px;text-shadow:none;margin-top:0.1rem;font-size:clamp(1.6rem,3.5vw,3rem)}
 .h-role{font-family:var(--mono);font-size:0.78rem;color:var(--gold2);margin-bottom:1.8rem;letter-spacing:1.5px;padding-left:1rem;border-left:2px solid var(--gold);font-weight:700;text-transform:uppercase}
 .h-bio{color:var(--text-m);font-size:1rem;line-height:1.9;max-width:460px;margin-bottom:2.2rem;font-weight:300}
 .h-bio strong{color:#ffffff;font-weight:600}
@@ -139,7 +139,6 @@ section{position:relative;z-index:3;max-width:1200px;margin:0 auto;padding:6rem 
 .mqtrack span.hi{color:var(--gold);opacity:0.85}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* ══ PROJECT CARDS — FIXED ══ */
 .pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.4rem}
 .pcard{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:2rem;transition:all 0.4s var(--ease-out);position:relative;overflow:hidden}
 .pcard::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,212,255,0.05),transparent 60%);opacity:0;transition:opacity 0.4s;pointer-events:none;z-index:0}
@@ -147,25 +146,41 @@ section{position:relative;z-index:3;max-width:1200px;margin:0 auto;padding:6rem 
 .pcard:hover::before{opacity:1}
 .pcard:hover::after{transform:scaleX(1)}
 .pcard:hover{border-color:rgba(0,212,255,0.35);transform:translateY(-6px);box-shadow:0 28px 56px rgba(0,0,0,0.7),0 0 50px rgba(0,212,255,0.1);background:var(--card2)}
-/* All direct children of pcard sit above the pseudo overlays */
 .pcard > *{position:relative;z-index:1}
 .pbadge{display:inline-flex;align-items:center;gap:0.45rem;margin-bottom:1.1rem;font-family:var(--mono);font-size:0.56rem;letter-spacing:1.5px;text-transform:uppercase;padding:0.25rem 0.7rem;border-radius:3px}
-.b-ind{background:rgba(245,158,11,0.07);color:var(--acc);border:1px solid rgba(245,158,11,0.22)}
-.b-pop{background:rgba(255,107,53,0.06);color:var(--g2);border:1px solid rgba(255,107,53,0.25)}
-.b-live{background:rgba(14,165,233,0.06);color:var(--p3);border:1px solid rgba(0,212,255,0.2)}
+.b-pub{background:rgba(139,92,246,0.07);color:#a78bfa;border:1px solid rgba(139,92,246,0.25)}
+.b-sec{background:rgba(239,68,68,0.07);color:#f87171;border:1px solid rgba(239,68,68,0.25)}
+.b-ai{background:rgba(14,165,233,0.06);color:var(--p3);border:1px solid rgba(0,212,255,0.2)}
+.b-data{background:rgba(34,197,94,0.06);color:#86efac;border:1px solid rgba(34,197,94,0.2)}
+.b-auto{background:rgba(251,191,36,0.06);color:#fde68a;border:1px solid rgba(251,191,36,0.2)}
 .bdot{width:5px;height:5px;border-radius:50%;background:currentColor;display:inline-block;animation:p-pulse 2s infinite}
 .pico{width:38px;height:38px;border-radius:6px;border:1px solid var(--border);background:var(--card2);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;transition:all 0.3s}
 .pcard:hover .pico{border-color:rgba(0,212,255,0.28);background:rgba(14,165,233,0.08)}
 .pico svg{width:16px;height:16px}
 .pcard h3{font-family:var(--display);font-size:1.2rem;font-weight:800;color:#ffffff;margin-bottom:0.5rem;letter-spacing:-0.3px}
 .pcard p{color:var(--text-m);font-size:0.9rem;line-height:1.8;margin-bottom:1.4rem;font-weight:300}
-/* ── KEY FIX: plink is always clickable, above pseudo overlays ── */
+.ptags{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.2rem}
+.ptag{font-family:var(--mono);font-size:0.55rem;color:var(--text-s);padding:0.2rem 0.55rem;border:1px solid rgba(0,180,255,0.12);border-radius:3px;background:rgba(0,180,255,0.04);letter-spacing:0.5px}
 .plink{display:inline-flex;align-items:center;gap:0.55rem;font-family:var(--mono);font-size:0.63rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;padding:0.55rem 1.15rem;border-radius:6px;border:1px solid rgba(251,146,60,0.55);color:#fb923c;background:rgba(251,146,60,0.08);box-shadow:0 0 12px rgba(251,146,60,0.15),inset 0 0 8px rgba(251,146,60,0.04);transition:all 0.28s var(--ease-out);position:relative;z-index:2;cursor:pointer}
 .plink .arrow{transition:transform 0.28s var(--ease-out);font-size:0.75rem}
 .plink:hover{color:#ffffff;background:rgba(251,146,60,0.18);border-color:rgba(251,146,60,0.9);box-shadow:0 0 22px rgba(251,146,60,0.4),0 0 6px rgba(251,146,60,0.2),inset 0 0 12px rgba(251,146,60,0.08);transform:translateY(-2px)}
 .plink:hover .arrow{transform:translate(4px,-4px)}
-.plink-pink{color:#f472b6;border-color:rgba(244,114,182,0.55);background:rgba(244,114,182,0.08);box-shadow:0 0 12px rgba(244,114,182,0.15),inset 0 0 8px rgba(244,114,182,0.04)}
-.plink-pink:hover{color:#ffffff;background:rgba(244,114,182,0.18);border-color:rgba(244,114,182,0.9);box-shadow:0 0 22px rgba(244,114,182,0.45),0 0 6px rgba(244,114,182,0.2),inset 0 0 12px rgba(244,114,182,0.08)}
+.plink-purple{color:#a78bfa;border-color:rgba(139,92,246,0.55);background:rgba(139,92,246,0.08);box-shadow:0 0 12px rgba(139,92,246,0.15),inset 0 0 8px rgba(139,92,246,0.04)}
+.plink-purple:hover{color:#ffffff;background:rgba(139,92,246,0.18);border-color:rgba(139,92,246,0.9);box-shadow:0 0 22px rgba(139,92,246,0.4)}
+.plink-red{color:#f87171;border-color:rgba(239,68,68,0.55);background:rgba(239,68,68,0.08);box-shadow:0 0 12px rgba(239,68,68,0.15),inset 0 0 8px rgba(239,68,68,0.04)}
+.plink-red:hover{color:#ffffff;background:rgba(239,68,68,0.18);border-color:rgba(239,68,68,0.9);box-shadow:0 0 22px rgba(239,68,68,0.4)}
+
+/* Publication highlight card */
+.pub-card{background:linear-gradient(135deg,rgba(139,92,246,0.06),rgba(0,212,255,0.04));border:1px solid rgba(139,92,246,0.25);border-radius:8px;padding:1.8rem 2rem;margin-bottom:2rem;position:relative;overflow:hidden}
+.pub-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#7c3aed,var(--acc));pointer-events:none}
+.pub-venue{font-family:var(--mono);font-size:0.57rem;color:#a78bfa;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.7rem;display:flex;align-items:center;gap:0.5rem}
+.pub-venue::before{content:'';width:8px;height:8px;border-radius:50%;background:#a78bfa;box-shadow:0 0 8px rgba(167,139,250,0.6)}
+.pub-title{font-family:var(--display);font-size:1.1rem;font-weight:800;color:#ffffff;margin-bottom:0.8rem;line-height:1.3}
+.pub-desc{color:var(--text-m);font-size:0.87rem;line-height:1.75;font-weight:300;margin-bottom:1rem}
+.pub-metrics{display:flex;gap:1.5rem;flex-wrap:wrap}
+.pub-m{display:flex;flex-direction:column;gap:0.2rem}
+.pub-m .mv{font-family:var(--display);font-size:1.2rem;font-weight:800;color:var(--gold)}
+.pub-m .ml{font-family:var(--mono);font-size:0.55rem;color:var(--text-s);letter-spacing:1.5px;text-transform:uppercase}
 
 .edu-list{display:flex;flex-direction:column;gap:1.2rem;padding-left:2rem;position:relative}
 .edu-list::before{content:'';position:absolute;left:0;top:8px;bottom:8px;width:1px;background:linear-gradient(to bottom,var(--p),rgba(0,212,255,0.05))}
@@ -175,6 +190,8 @@ section{position:relative;z-index:3;max-width:1200px;margin:0 auto;padding:6rem 
 .etag{font-family:var(--mono);font-size:0.57rem;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.4rem;opacity:0.9}
 .ecard h3{font-family:var(--display);font-size:1.1rem;font-weight:800;color:#ffffff;margin-bottom:0.2rem}
 .ecard p{font-size:0.87rem;color:var(--text-m);font-weight:300}
+.ecard .cert{font-family:var(--mono);font-size:0.6rem;color:var(--acc);margin-top:0.5rem;display:flex;align-items:center;gap:0.4rem}
+.ecard .cert::before{content:'★';font-size:0.55rem}
 
 .sw{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 .sclbl{font-family:var(--mono);font-size:0.58rem;color:#9b8fc0;letter-spacing:3px;text-transform:uppercase;margin-bottom:1.8rem;padding-bottom:0.65rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:0.6rem}
@@ -189,18 +206,15 @@ section{position:relative;z-index:3;max-width:1200px;margin:0 auto;padding:6rem 
 .stag{font-family:var(--mono);font-size:0.64rem;color:#ddd4f8;padding:0.35rem 0.8rem;border:1px solid var(--border);border-radius:3px;background:var(--card);transition:all 0.25s;letter-spacing:0.5px}
 .stag:hover{color:var(--gold2);border-color:rgba(251,191,36,0.35);background:rgba(251,191,36,0.05);transform:translateY(-1px)}
 
-.ctag{display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--mono);font-size:0.6rem;color:var(--gold2);letter-spacing:2px;text-transform:uppercase;padding:0.5rem 1.1rem;border-left:2px solid var(--gold);background:rgba(251,191,36,0.05);margin-bottom:1.5rem;border-radius:0 4px 4px 0}
-
-.hwgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-bottom:2.5rem}
-.hwcard{background:var(--card);border:1px solid var(--border);border-radius:6px;overflow:hidden;transition:all 0.4s var(--ease-out);display:flex;flex-direction:column}
-.hwcard:hover{border-color:rgba(0,212,255,0.3);box-shadow:0 20px 48px rgba(0,0,0,0.5),0 0 30px rgba(14,165,233,0.06);transform:translateY(-4px)}
-.hw-img{width:100%;aspect-ratio:16/9;overflow:hidden;background:#0a0a18;flex-shrink:0;position:relative}
-.hw-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 70%,rgba(8,8,16,0.35) 100%);pointer-events:none}
-.hw-img img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform 0.6s var(--ease-out);filter:brightness(0.92) contrast(1.06) saturate(0.95)}
-.hwcard:hover .hw-img img{transform:scale(1.03);filter:brightness(1) contrast(1.06) saturate(1)}
-.hwinfo{padding:1.1rem 1.3rem}
-.hwinfo h4{font-family:var(--display);font-size:1.05rem;font-weight:800;color:#ffffff;margin-bottom:0.35rem}
-.hwinfo p{font-size:0.85rem;color:var(--text-m);line-height:1.65;font-weight:300}
+/* Awards section */
+.award-list{display:flex;flex-direction:column;gap:1rem}
+.award-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.4rem 1.7rem;transition:all 0.35s var(--ease-out);display:flex;gap:1.2rem;align-items:flex-start}
+.award-card:hover{border-color:rgba(0,212,255,0.3);transform:translateX(6px);background:var(--card2)}
+.award-ico{width:36px;height:36px;border-radius:6px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
+.award-info{}
+.award-title{font-family:var(--display);font-size:1rem;font-weight:800;color:#ffffff;margin-bottom:0.25rem}
+.award-date{font-family:var(--mono);font-size:0.57rem;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.4rem}
+.award-desc{font-size:0.85rem;color:var(--text-m);font-weight:300;line-height:1.65}
 
 .cwrap{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
 .citem{display:flex;align-items:center;gap:1.1rem;padding:1.1rem 1.4rem;border:1px solid var(--border);border-radius:6px;background:var(--card);text-decoration:none;transition:all 0.3s var(--ease-out);margin-bottom:0.8rem}
@@ -225,9 +239,7 @@ section{position:relative;z-index:3;max-width:1200px;margin:0 auto;padding:6rem 
 .asub{font-family:var(--mono);font-size:0.57rem;color:var(--text-d);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.4rem}
 .aval{font-family:var(--display);font-size:1.3rem;font-weight:800;color:var(--gold)}
 
-.par-text{will-change:transform;transition:transform 0.05s linear}
 .par-slow{--par-speed:0.18}
-.par-fast{--par-speed:-0.12}
 .par-tilt{will-change:transform}
 
 .scroll-progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--p),var(--acc),var(--g2));z-index:1001;transform-origin:left;transition:width 0.1s}
@@ -257,8 +269,7 @@ footer p{font-family:var(--mono);font-size:0.6rem;color:var(--text-d);letter-spa
 @media(max-width:580px){
   .pgrid{grid-template-columns:1fr}
   section{padding:4.5rem 1.4rem}
-  .hwgrid{grid-template-columns:1fr;gap:0.8rem}
-  .h-name{font-size:2.8rem}
+  .h-name{font-size:2.2rem}
 }
 </style>
 </head>
@@ -277,57 +288,60 @@ footer p{font-family:var(--mono);font-size:0.6rem;color:var(--text-d);letter-spa
 
 <div class="section-indicator" id="si">
   <div class="sec-dot active" data-section="home" data-label="Home"></div>
+  <div class="sec-dot" data-section="research" data-label="Research"></div>
   <div class="sec-dot" data-section="projects" data-label="Projects"></div>
   <div class="sec-dot" data-section="education" data-label="Education"></div>
   <div class="sec-dot" data-section="skills" data-label="Skills"></div>
-  <div class="sec-dot" data-section="academic" data-label="Academic"></div>
+  <div class="sec-dot" data-section="awards" data-label="Awards"></div>
   <div class="sec-dot" data-section="contact" data-label="Contact"></div>
 </div>
 
 <div id="entrance">
   <div class="e-ring"></div><div class="e-ring"></div><div class="e-ring"></div>
   <div class="e-inner">
-    <div class="e-name">Afia Anjum Borsha</div>
-    <div class="e-sub">Software Engineer · CSE · BRAC University</div>
+    <div class="e-name">AFIA ANJUM BORSHA</div>
+    <div class="e-sub">AI Researcher · Security Analyst · BRAC University</div>
     <div class="e-line"></div>
   </div>
 </div>
 
 <nav id="navbar">
   <div class="nav-inner">
-    <div class="logo">Afia Anjum Borsha<span>.</span></div>
+    <div class="logo">Afia<span>.</span></div>
     <div class="menu-toggle" id="mt"><span></span><span></span><span></span></div>
   </div>
 </nav>
 <div class="nav-drawer" id="nd">
   <a href="#home">Home</a>
+  <a href="#research">Research</a>
   <a href="#projects">Projects</a>
   <a href="#education">Education</a>
   <a href="#skills">Skills</a>
-  <a href="#academic">Academic</a>
+  <a href="#awards">Awards</a>
   <a href="#contact">Contact</a>
 </div>
 
 <div id="home" style="position:relative;z-index:3">
   <div class="hero-inner">
     <div class="hero-text">
-      <div class="h-tag reveal par-slow"><span class="pdot"></span>CSE Student — BRAC University</div>
-      <h1 class="h-name reveal d1">Afia Anjum Borsha<span>ENGINEER</span></h1>
-      <div class="h-role reveal d2 par-slow">Full Stack Developer &amp; Problem Solver</div>
-      <p class="h-bio reveal d3">Passionate <strong>Computer Science &amp; Engineering student</strong> at BRAC University. I build clean, purposeful software — from interactive web applications to embedded systems. Focused on turning complex ideas into polished, working products.</p>
+      <div class="h-tag reveal par-slow"><span class="pdot"></span>CSE Student — BRAC University · 10th Semester</div>
+      <h1 class="h-name reveal d1">AFIA ANJUM<span>BORSHA</span></h1>
+      <div class="h-role reveal d2 par-slow">AI Researcher &amp; Security Analyst</div>
+      <p class="h-bio reveal d3">Specializing in <strong>Explainable AI, Model Optimization &amp; Cybersecurity</strong>. Published IEEE researcher, Aspire Leaders Fellow, and co-founder of Epoch One — BRAC University's student-led AI research collective. Building interpretable, secure systems at the intersection of AI and offensive security.</p>
       <div class="reveal d4" style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center">
-        <a href="#projects" class="h-cta">View Projects <span style="font-size:0.7rem">↗</span></a>
-        <a href="mailto:Afia Anjum Borshasilawat@gmail.com" class="h-cta-ghost">Contact Me</a>
+        <a href="#research" class="h-cta">View Research <span style="font-size:0.7rem">↗</span></a>
+        <a href="mailto:your@email.com" class="h-cta-ghost">Contact Me</a>
       </div>
       <div class="h-links reveal d4">
-        <a href="https://github.com/Afia Anjum Borsha220" target="_blank" class="h-link">GitHub</a>
-        <a href="https://www.linkedin.com/in/Afia Anjum Borsha-silawat-076a25232" target="_blank" class="h-link">LinkedIn</a>
-        <a href="mailto:Afia Anjum Borshasilawat@gmail.com" class="h-link">Email</a>
+        <a href="https://github.com/nullafia" target="_blank" class="h-link">GitHub</a>
+        <a href="#" target="_blank" class="h-link">LinkedIn</a>
+        <a href="#" target="_blank" class="h-link">HackerOne</a>
+        <a href="#" target="_blank" class="h-link">Scholar</a>
       </div>
       <div class="stat-row reveal d4">
-        <div class="stat"><div class="n">6+</div><div class="l">Live Projects</div></div>
-        <div class="stat"><div class="n">3+</div><div class="l">Years Coding</div></div>
-        <div class="stat"><div class="n">PHP</div><div class="l">+ Laravel</div></div>
+        <div class="stat"><div class="n">1</div><div class="l">IEEE Paper</div></div>
+        <div class="stat"><div class="n">xAI</div><div class="l">+ Security</div></div>
+        <div class="stat"><div class="n">4.0</div><div class="l">Fairness Cert</div></div>
       </div>
     </div>
     <div class="h-img-wrap reveal">
@@ -336,233 +350,269 @@ footer p{font-family:var(--mono);font-size:0.6rem;color:var(--text-d);letter-spa
         <div class="corner bl"></div><div class="corner br"></div>
         <div class="h-img-gaze-wrap" id="gazeWrap">
           <div class="h-img-glow" id="gazeGlow"></div>
-          <img src="https://i.imgur.com/Ywo1SIi.jpg" alt="Afia Anjum Borsha">
+          <img src="https://imgur.com/a/qb6Bvy6" alt="Afia Anjum Borsha">
         </div>
       </div>
-      <div class="h-badge"><div class="n">6+</div><div class="l">Live Projects</div></div>
+      <div class="h-badge"><div class="n">IEEE</div><div class="l">Published</div></div>
     </div>
   </div>
 </div>
 
 <div class="mqwrap">
   <div class="mqtrack">
-    <span class="hi">Software Engineer</span><span>·</span>
+    <span class="hi">AI Researcher</span><span>·</span>
     <span>BRAC University</span><span>·</span>
-    <span class="hi">Full Stack Developer</span><span>·</span>
-    <span>PHP &amp; Laravel</span><span>·</span>
-    <span class="hi">Problem Solver</span><span>·</span>
-    <span>CSE Student</span><span>·</span>
+    <span class="hi">Explainable AI</span><span>·</span>
+    <span>Security Analyst</span><span>·</span>
+    <span class="hi">IEEE Published</span><span>·</span>
+    <span>HackerOne</span><span>·</span>
+    <span class="hi">Aspire Leaders Fellow</span><span>·</span>
+    <span>Epoch One Co-Founder</span><span>·</span>
     <span class="hi">Dhaka, Bangladesh</span><span>·</span>
-    <span>Python · Java · React</span><span>·</span>
-    <span class="hi">Software Engineer</span><span>·</span>
+    <span>Python · SHAP · Burp Suite</span><span>·</span>
+    <span class="hi">AI Researcher</span><span>·</span>
     <span>BRAC University</span><span>·</span>
-    <span class="hi">Full Stack Developer</span><span>·</span>
-    <span>PHP &amp; Laravel</span><span>·</span>
-    <span class="hi">Problem Solver</span><span>·</span>
-    <span>CSE Student</span><span>·</span>
+    <span class="hi">Explainable AI</span><span>·</span>
+    <span>Security Analyst</span><span>·</span>
+    <span class="hi">IEEE Published</span><span>·</span>
+    <span>HackerOne</span><span>·</span>
+    <span class="hi">Aspire Leaders Fellow</span><span>·</span>
+    <span>Epoch One Co-Founder</span><span>·</span>
     <span class="hi">Dhaka, Bangladesh</span><span>·</span>
-    <span>Python · Java · React</span><span>·</span>
+    <span>Python · SHAP · Burp Suite</span><span>·</span>
   </div>
 </div>
 
+<!-- RESEARCH PUBLICATION -->
+<section id="research">
+  <div class="lbl">Academic Contribution</div>
+  <div class="stitle par-tilt">Research <span class="ap">Publication</span></div>
+  <div class="pub-card reveal">
+    <div class="pub-venue">IEEE QPAIN 2026 — Accepted</div>
+    <div class="pub-title">Distinguishing Mainshocks from Foreshocks Using Spatiotemporal Labeling and Interpretable Ensemble Learning</div>
+    <div class="pub-desc">Co-authored a spatiotemporal earthquake mainshock detection framework using gradient boosting and Bayesian optimization. Applied SHAP-based interpretability to confirm magnitude differential as the dominant predictor. Accepted at the IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN), 2026.</div>
+    <div class="pub-metrics">
+      <div class="pub-m"><div class="mv">0.97</div><div class="ml">Recall</div></div>
+      <div class="pub-m"><div class="mv">0.965</div><div class="ml">AUC Score</div></div>
+      <div class="pub-m"><div class="mv">SHAP</div><div class="ml">Interpretability</div></div>
+      <div class="pub-m"><div class="mv">IEEE</div><div class="ml">Conference</div></div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- PROJECTS -->
 <section id="projects">
   <div class="lbl">Selected Work</div>
   <div class="stitle par-tilt">My <span class="ap">Projects</span></div>
   <div class="pgrid">
     <div class="pcard reveal">
-      <div class="pbadge b-ind"><span class="bdot"></span>Industry Level</div>
-      <div class="pico" style="border-color:rgba(245,158,11,0.2);background:rgba(245,158,11,0.04)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      <div class="pbadge b-sec"><span class="bdot"></span>LLM Security</div>
+      <div class="pico" style="border-color:rgba(239,68,68,0.25);background:rgba(239,68,68,0.04)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       </div>
-      <h3>Ominelle</h3>
-      <p>Production-grade platform actively used by real users and adopted by a company. Built for reliability and real-world scale.</p>
-      <a href="https://ominelle.vercel.app/" target="_blank" rel="noopener noreferrer" class="plink plink-pink">Visit Platform <span class="arrow">↗</span></a>
+      <h3>Reflex-Guard</h3>
+      <p>Real-time LLM jailbreak detection framework designed to detect and block adversarial prompts. Engineered for high performance with just 35ms operational latency during experimental testing.</p>
+      <div class="ptags"><span class="ptag">Python</span><span class="ptag">LLM APIs</span><span class="ptag">Prompt Injection</span><span class="ptag">35ms Latency</span></div>
+      <a href="#" class="plink plink-red">View Project <span class="arrow">↗</span></a>
     </div>
     <div class="pcard reveal d1">
-      <div class="pbadge b-pop"><span class="bdot"></span>Most Popular</div>
-      <div class="pico" style="border-color:rgba(255,107,53,0.25);background:rgba(255,107,53,0.04)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--g2)" stroke-width="1.5" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      <div class="pbadge b-ai"><span class="bdot"></span>From Scratch</div>
+      <div class="pico" style="border-color:rgba(14,165,233,0.25);background:rgba(14,165,233,0.04)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--p3)" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
       </div>
-      <h3>Text to Handwritten</h3>
-      <p>Convert typed text into handwritten-style notes instantly. A unique tool loved by students and creators worldwide.</p>
-      <a href="https://text-to-handwritten-Afia Anjum Borsha.vercel.app/" target="_blank" rel="noopener noreferrer" class="plink">View Project <span class="arrow">↗</span></a>
+      <h3>First-Principles ML</h3>
+      <p>Programmed core machine learning models — Random Forests and Decision Trees — entirely from scratch without high-level libraries to master their mathematical foundations and computational constraints.</p>
+      <div class="ptags"><span class="ptag">Python</span><span class="ptag">NumPy</span><span class="ptag">Linear Algebra</span><span class="ptag">From Scratch</span></div>
+      <a href="https://github.com/nullafia" target="_blank" class="plink">GitHub <span class="arrow">↗</span></a>
     </div>
     <div class="pcard reveal d2">
-      <div class="pbadge b-live"><span class="bdot"></span>Live</div>
-      <div class="pico">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--p3)" stroke-width="1.5" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <div class="pbadge b-auto"><span class="bdot"></span>Automation</div>
+      <div class="pico" style="border-color:rgba(251,191,36,0.25);background:rgba(251,191,36,0.04)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fde68a" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6 8h.01M10 8h4M18 8h.01M6 12h12"/></svg>
       </div>
-      <h3>StudyMate+</h3>
-      <p>Smart study companion with AI-powered flashcard generator, interactive quiz maker, and focus timer.</p>
-      <a href="https://Afia Anjum Borsha220.github.io/studymate/" target="_blank" rel="noopener noreferrer" class="plink">View Project <span class="arrow">↗</span></a>
+      <h3>AI Business Automation</h3>
+      <p>Comprehensive business automation pipeline using n8n. Manages client interactions, automates scheduling, handles inquiries, and executes calendar integrations for commercial clients.</p>
+      <div class="ptags"><span class="ptag">n8n</span><span class="ptag">API Integrations</span><span class="ptag">Workflow Automation</span></div>
+      <a href="#" class="plink" style="color:#fde68a;border-color:rgba(251,191,36,0.55);background:rgba(251,191,36,0.08)">Details <span class="arrow">↗</span></a>
     </div>
     <div class="pcard reveal">
-      <div class="pbadge b-live"><span class="bdot"></span>Live</div>
-      <div class="pico">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--p3)" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <div class="pbadge b-sec"><span class="bdot"></span>Bug Bounty</div>
+      <div class="pico" style="border-color:rgba(239,68,68,0.25);background:rgba(239,68,68,0.04)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg>
       </div>
-      <h3>Skincare Bot</h3>
-      <p>Interactive skincare recommendation assistant helping users find the perfect routine through guided questions.</p>
-      <a href="https://Afia Anjum Borsha220.github.io/-Afia Anjum Borsha-skincare-bot/" target="_blank" rel="noopener noreferrer" class="plink">View Project <span class="arrow">↗</span></a>
+      <h3>Vulnerability Research</h3>
+      <p>Active participant in bug bounty programs on HackerOne and web application penetration testing. Identifies structural vulnerabilities using manual testing alongside industry-standard tooling.</p>
+      <div class="ptags"><span class="ptag">Burp Suite</span><span class="ptag">Nmap</span><span class="ptag">SQLmap</span><span class="ptag">HackerOne</span></div>
+      <a href="#" target="_blank" class="plink plink-red">HackerOne Profile <span class="arrow">↗</span></a>
     </div>
     <div class="pcard reveal d1">
-      <div class="pbadge b-live"><span class="bdot"></span>Live</div>
-      <div class="pico">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--p3)" stroke-width="1.5" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      <div class="pbadge b-data"><span class="bdot"></span>Data Science</div>
+      <div class="pico" style="border-color:rgba(34,197,94,0.25);background:rgba(34,197,94,0.04)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#86efac" stroke-width="1.5" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
       </div>
-      <h3>Avengers Health Monitor</h3>
-      <p>Superhero-themed health monitoring application with interactive tracking and real-time UI updates.</p>
-      <a href="https://Afia Anjum Borsha220.github.io/avengers-health-monitor" target="_blank" rel="noopener noreferrer" class="plink">View Project <span class="arrow">↗</span></a>
+      <h3>Football Analytics</h3>
+      <p>In-depth case study analyzing GPS positional data for a national team player. Visualized and interpreted PlayerLoad, heart rate recovery, and key physiological metrics to optimize athletic conditioning.</p>
+      <div class="ptags"><span class="ptag">Python</span><span class="ptag">Pandas</span><span class="ptag">GPS Data</span><span class="ptag">Data Visualization</span></div>
+      <a href="https://github.com/nullafia" target="_blank" class="plink" style="color:#86efac;border-color:rgba(34,197,94,0.55);background:rgba(34,197,94,0.08)">GitHub <span class="arrow">↗</span></a>
     </div>
     <div class="pcard reveal d2">
-      <div class="pbadge b-live"><span class="bdot"></span>Live</div>
-      <div class="pico">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--p3)" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      <div class="pbadge b-pub"><span class="bdot"></span>Research</div>
+      <div class="pico" style="border-color:rgba(139,92,246,0.25);background:rgba(139,92,246,0.04)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
       </div>
-      <h3>Doraemon Tic Tac Toe</h3>
-      <p>Polished Doraemon-themed game with smooth animations and player vs player mode.</p>
-      <a href="https://Afia Anjum Borsha220.github.io/my-doraemon-game/" target="_blank" rel="noopener noreferrer" class="plink">View Project <span class="arrow">↗</span></a>
+      <h3>Earthquake Detection</h3>
+      <p>Spatiotemporal mainshock/foreshock classification using interpretable ensemble learning. Achieved 0.97 recall and 0.965 AUC with SHAP-validated feature importance. Accepted at IEEE QPAIN 2026.</p>
+      <div class="ptags"><span class="ptag">Gradient Boosting</span><span class="ptag">SHAP</span><span class="ptag">Bayesian Opt</span><span class="ptag">IEEE</span></div>
+      <a href="#" class="plink plink-purple">Paper <span class="arrow">↗</span></a>
     </div>
   </div>
 </section>
 <div class="divider"></div>
 
+<!-- EDUCATION -->
 <section id="education">
   <div class="lbl">Background</div>
   <div class="stitle par-tilt">Education</div>
   <div class="edu-list">
-    <div class="ecard reveal"><div class="etag">Current</div><h3>BRAC University</h3><p>B.Sc. in Computer Science &amp; Engineering (CSE) — Undergraduate</p></div>
-    <div class="ecard reveal d1"><div class="etag">Completed</div><h3>Dhaka Imperial College</h3><p>Higher Secondary Certificate — Science</p></div>
-    <div class="ecard reveal d2"><div class="etag">Completed</div><h3>National Ideal School</h3><p>Secondary School Certificate — Science &amp; Mathematics</p></div>
+    <div class="ecard reveal">
+      <div class="etag">Current · 10th Semester</div>
+      <h3>BRAC University</h3>
+      <p>B.Sc. in Computer Science &amp; Engineering — Focus: Artificial Intelligence &amp; Cybersecurity</p>
+    </div>
+    <div class="ecard reveal d1">
+      <div class="etag">Certification</div>
+      <h3>Open Society University Network (OSUN)</h3>
+      <p>Certified in Algorithmic Fairness</p>
+      <div class="cert">Grade: 4.0 / Perfect Score</div>
+    </div>
+    <div class="ecard reveal d2">
+      <div class="etag">Completed · 2020</div>
+      <h3>Higher Secondary Certificate</h3>
+      <p>GPA 5.00 — Golden A+</p>
+    </div>
+    <div class="ecard reveal d3">
+      <div class="etag">Completed · 2018</div>
+      <h3>Secondary School Certificate</h3>
+      <p>GPA 5.00 — Golden A+</p>
+    </div>
   </div>
 </section>
 <div class="divider"></div>
 
+<!-- SKILLS -->
 <section id="skills">
   <div class="lbl">Competencies</div>
   <div class="stitle par-tilt">Skills &amp; <span class="ap">Expertise</span></div>
   <div class="sw">
     <div>
       <div class="sclbl">Technical Skills</div>
-      <div class="srow reveal"><span class="slbl">HTML &amp; CSS</span><div class="sbar"><div class="sfill" data-w="0.88"></div></div><span class="spct">88%</span></div>
-      <div class="srow reveal d1"><span class="slbl">JavaScript</span><div class="sbar"><div class="sfill" data-w="0.82"></div></div><span class="spct">82%</span></div>
-      <div class="srow reveal d2"><span class="slbl">PHP</span><div class="sbar"><div class="sfill" data-w="0.85"></div></div><span class="spct">85%</span></div>
-      <div class="srow reveal"><span class="slbl">Laravel</span><div class="sbar"><div class="sfill" data-w="0.80"></div></div><span class="spct">80%</span></div>
-      <div class="srow reveal d1"><span class="slbl">Python</span><div class="sbar"><div class="sfill" data-w="0.88"></div></div><span class="spct">88%</span></div>
-      <div class="srow reveal d2"><span class="slbl">C Programming</span><div class="sbar"><div class="sfill" data-w="0.82"></div></div><span class="spct">82%</span></div>
-      <div class="srow reveal"><span class="slbl">Java</span><div class="sbar"><div class="sfill" data-w="0.80"></div></div><span class="spct">80%</span></div>
-      <div class="srow reveal d1"><span class="slbl">MySQL</span><div class="sbar"><div class="sfill" data-w="0.78"></div></div><span class="spct">78%</span></div>
-      <div class="srow reveal d2"><span class="slbl">Git &amp; GitHub</span><div class="sbar"><div class="sfill" data-w="0.83"></div></div><span class="spct">83%</span></div>
-      <div class="srow reveal"><span class="slbl">Data Structures &amp; Algo</span><div class="sbar"><div class="sfill" data-w="0.90"></div></div><span class="spct">90%</span></div>
-      <div class="srow reveal d1"><span class="slbl">Artificial Intelligence</span><div class="sbar"><div class="sfill" data-w="0.87"></div></div><span class="spct">87%</span></div>
+      <div class="srow reveal"><span class="slbl">Python</span><div class="sbar"><div class="sfill" data-w="0.92"></div></div><span class="spct">92%</span></div>
+      <div class="srow reveal d1"><span class="slbl">Explainable AI (SHAP/LIME)</span><div class="sbar"><div class="sfill" data-w="0.88"></div></div><span class="spct">88%</span></div>
+      <div class="srow reveal d2"><span class="slbl">Web App Pentesting</span><div class="sbar"><div class="sfill" data-w="0.82"></div></div><span class="spct">82%</span></div>
+      <div class="srow reveal"><span class="slbl">Machine Learning</span><div class="sbar"><div class="sfill" data-w="0.87"></div></div><span class="spct">87%</span></div>
+      <div class="srow reveal d1"><span class="slbl">Burp Suite / Nmap</span><div class="sbar"><div class="sfill" data-w="0.80"></div></div><span class="spct">80%</span></div>
+      <div class="srow reveal d2"><span class="slbl">Causal Inference (DoWhy)</span><div class="sbar"><div class="sfill" data-w="0.78"></div></div><span class="spct">78%</span></div>
+      <div class="srow reveal"><span class="slbl">n8n Workflow Automation</span><div class="sbar"><div class="sfill" data-w="0.83"></div></div><span class="spct">83%</span></div>
+      <div class="srow reveal d1"><span class="slbl">Data Structures &amp; Algo</span><div class="sbar"><div class="sfill" data-w="0.90"></div></div><span class="spct">90%</span></div>
     </div>
     <div>
-      <div class="sclbl">Academic Subjects</div>
+      <div class="sclbl">Research &amp; Academic Areas</div>
       <div class="stags reveal">
-        <span class="stag">Calculus I &amp; II</span><span class="stag">Statistics &amp; Probability</span>
-        <span class="stag">Discrete Mathematics</span><span class="stag">Linear Algebra</span>
-        <span class="stag">Mathematics III</span><span class="stag">Mathematics IV</span>
-        <span class="stag">Laplace Transforms</span><span class="stag">Numerical Methods</span>
-        <span class="stag">Data Communications</span><span class="stag">Circuits &amp; Electronics</span>
-        <span class="stag">Digital Logic Design</span><span class="stag">Electronic Devices &amp; Circuits</span>
-        <span class="stag">Digital Electronics &amp; Pulse Techniques</span>
-        <span class="stag">Computer Architecture</span><span class="stag">Microprocessors</span>
-        <span class="stag">Automata &amp; Computability</span><span class="stag">Database Systems</span>
-        <span class="stag">Computer Graphics</span><span class="stag">Data Structures</span>
-        <span class="stag">Algorithms</span><span class="stag">Operating Systems</span>
-        <span class="stag">Object Oriented Programming</span><span class="stag">Software Engineering</span>
-        <span class="stag">Computer Interfacing</span><span class="stag">VLSI Design</span>
-        <span class="stag">Systems Analysis &amp; Design</span><span class="stag">Compiler Design</span>
-        <span class="stag">Computer Networks</span><span class="stag">Artificial Intelligence</span>
-        <span class="stag">Robotics</span>
+        <span class="stag">Explainable AI (xAI)</span>
+        <span class="stag">Causal Inference</span>
+        <span class="stag">Algorithmic Fairness</span>
+        <span class="stag">LLM Security</span>
+        <span class="stag">Offensive Security</span>
+        <span class="stag">Sports Analytics</span>
+        <span class="stag">Model Optimization</span>
+        <span class="stag">Gradient Boosting</span>
+        <span class="stag">Bayesian Optimization</span>
+        <span class="stag">SHAP Interpretability</span>
+        <span class="stag">Vulnerability Research</span>
+        <span class="stag">Bug Bounty</span>
+        <span class="stag">Prompt Injection</span>
+        <span class="stag">Ensemble Learning</span>
+        <span class="stag">Spatiotemporal ML</span>
+        <span class="stag">Computer Networks</span>
+        <span class="stag">Operating Systems</span>
+        <span class="stag">Database Systems</span>
+        <span class="stag">Algorithms</span>
+        <span class="stag">Software Engineering</span>
+      </div>
+      <div class="sclbl" style="margin-top:2rem">Languages</div>
+      <div class="stags reveal d1">
+        <span class="stag">English — Fluent</span>
+        <span class="stag">Bengali — Native</span>
+        <span class="stag">French — Elementary</span>
       </div>
     </div>
   </div>
 </section>
 <div class="divider"></div>
 
-<section id="academic">
-  <div class="lbl">University Work</div>
-  <div class="stitle par-tilt">Hardware <span class="ag">Projects</span></div>
-  <p style="color:var(--text-m);margin-bottom:2.5rem;max-width:560px;font-size:0.9rem;font-weight:300;line-height:1.8">Hands-on lab and coursework at BRAC University — applying theory to real circuits and embedded systems.</p>
-  <div class="ctag">CSE461 — Introduction to Robotics</div>
-  <div class="hwgrid" style="grid-template-columns:1fr">
-    <div class="hwcard reveal">
-      <div class="hw-img"><img src="https://i.imgur.com/KKUAmcn.jpg" alt="PoultryGuardian" loading="lazy"></div>
-      <div class="hwinfo">
-        <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:0.6rem;flex-wrap:wrap">
-          <h4 style="margin:0">PoultryGuardian</h4>
-          <span style="font-family:var(--mono);font-size:0.55rem;color:var(--acc);letter-spacing:2px;text-transform:uppercase;padding:0.2rem 0.6rem;border:1px solid rgba(0,212,255,0.25);border-radius:3px;background:rgba(0,212,255,0.05)">IoT · Embedded Systems</span>
-        </div>
-        <p style="margin-bottom:1.2rem">Smart automated poultry farm monitoring system — monitors temperature, humidity &amp; gas levels, automates feeding/watering, and prevents disease through real-time environmental control.</p>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.8rem">
-          <div style="background:rgba(0,212,255,0.04);border:1px solid rgba(0,212,255,0.12);border-radius:6px;padding:0.9rem 1rem">
-            <div style="font-family:var(--mono);font-size:0.55rem;color:var(--acc);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.4rem"><span style="width:5px;height:5px;border-radius:50%;background:var(--acc);display:inline-block"></span>Societal Impact</div>
-            <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
-              <li style="font-size:0.8rem;color:var(--text-m);font-weight:300;padding-left:0.8rem;position:relative"><span style="position:absolute;left:0;color:var(--acc)">›</span>Helps small farmers adopt smart farming affordably</li>
-              <li style="font-size:0.8rem;color:var(--text-m);font-weight:300;padding-left:0.8rem;position:relative"><span style="position:absolute;left:0;color:var(--acc)">›</span>Supports food security &amp; steady poultry supply</li>
-              <li style="font-size:0.8rem;color:var(--text-m);font-weight:300;padding-left:0.8rem;position:relative"><span style="position:absolute;left:0;color:var(--acc)">›</span>Motivates youth to see farming as a viable career</li>
-            </ul>
-          </div>
-          <div style="background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.12);border-radius:6px;padding:0.9rem 1rem">
-            <div style="font-family:var(--mono);font-size:0.55rem;color:var(--p2);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.4rem"><span style="width:5px;height:5px;border-radius:50%;background:var(--p2);display:inline-block"></span>Health &amp; Safety</div>
-            <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
-              <li style="font-size:0.8rem;color:var(--text-m);font-weight:300;padding-left:0.8rem;position:relative"><span style="position:absolute;left:0;color:var(--p2)">›</span>Reduces ammonia &amp; harmful gas exposure for farmers</li>
-              <li style="font-size:0.8rem;color:var(--text-m);font-weight:300;padding-left:0.8rem;position:relative"><span style="position:absolute;left:0;color:var(--p2)">›</span>Prevents poultry disease via environment control</li>
-              <li style="font-size:0.8rem;color:var(--text-m);font-weight:300;padding-left:0.8rem;position:relative"><span style="position:absolute;left:0;color:var(--p2)">›</span>Circuit fuses &amp; manual override ensure fail-safe ops</li>
-            </ul>
-          </div>
-          <div style="background:rgba(249,115,22,0.04);border:1px solid rgba(249,115,22,0.12);border-radius:6px;padding:0.9rem 1rem">
-            <div style="font-family:var(--mono);font-size:0.55rem;color:var(--g2);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;display:flex;align-items:center;gap:0.4rem"><span style="width:5px;height:5px;border-radius:50%;background:var(--g2);display:inline-block"></span>Legal &amp; Cultural</div>
-            <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
-              <li style="font-size:0.8rem;color:var(--text-m);font-weight:300;padding-left:0.8rem;position:relative"><span style="position:absolute;left:0;color:var(--g2)">›</span>Aligns with Bangladesh biosecurity &amp; livestock laws</li>
-              <li style="font-size:0.8rem;color:var(--text-m);font-weight:300;padding-left:0.8rem;position:relative"><span style="position:absolute;left:0;color:var(--g2)">›</span>Tech as a helper, not a replacement for farmers</li>
-              <li style="font-size:0.8rem;color:var(--text-m);font-weight:300;padding-left:0.8rem;position:relative"><span style="position:absolute;left:0;color:var(--g2)">›</span>Reduces workload for women managing home poultry</li>
-            </ul>
-          </div>
-        </div>
+<!-- AWARDS & LEADERSHIP -->
+<section id="awards">
+  <div class="lbl">Recognition &amp; Leadership</div>
+  <div class="stitle par-tilt">Awards <span class="ag">&amp; Roles</span></div>
+  <div class="award-list">
+    <div class="award-card reveal">
+      <div class="award-ico">🎓</div>
+      <div class="award-info">
+        <div class="award-date">Sep 2025 – Dec 2025</div>
+        <div class="award-title">Fellow — Aspire Leaders Program (Cohort 5)</div>
+        <div class="award-desc">Selected for and successfully completed the competitive global leadership program founded at Harvard Business School. One of a limited cohort chosen worldwide.</div>
+      </div>
+    </div>
+    <div class="award-card reveal d1">
+      <div class="award-ico">🚀</div>
+      <div class="award-info">
+        <div class="award-date">Late 2025 – Present</div>
+        <div class="award-title">Founding Member — Epoch One</div>
+        <div class="award-desc">Co-founded an independent, student-led AI research and development collective at BRAC University. Fostered a community focused on applied AI, resulting in published academic research and collaborative student projects.</div>
+      </div>
+    </div>
+    <div class="award-card reveal d2">
+      <div class="award-ico">⭐</div>
+      <div class="award-info">
+        <div class="award-date">Certification</div>
+        <div class="award-title">Algorithmic Fairness — Grade 4.0 (OSUN)</div>
+        <div class="award-desc">Perfect score certification in Algorithmic Fairness from the Open Society University Network, demonstrating mastery of ethical AI principles and bias mitigation.</div>
       </div>
     </div>
   </div>
 </section>
 <div class="divider"></div>
 
+<!-- CONTACT -->
 <section id="contact">
   <div class="lbl">Get In Touch</div>
   <div class="stitle par-tilt">Contact</div>
   <div class="cwrap">
     <div>
-      <p style="color:var(--text-m);margin-bottom:1.9rem;max-width:360px;font-size:0.92rem;font-weight:300;line-height:1.85">Open to internships, collaborations, or a conversation about tech. I usually reply within 24 hours.</p>
-      <a href="mailto:Afia Anjum Borshasilawat@gmail.com" class="citem reveal">
+      <p style="color:var(--text-m);margin-bottom:1.9rem;max-width:360px;font-size:0.92rem;font-weight:300;line-height:1.85">Open to research collaborations, internships, bug bounty partnerships, or a conversation about AI and security. I usually reply within 24 hours.</p>
+      <a href="mailto:your@email.com" class="citem reveal">
         <span class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
-        <span class="ctxt">Afia Anjum Borshasilawat@gmail.com</span>
+        <span class="ctxt">your@email.com</span>
       </a>
-      <a href="tel:+8801819438089" class="citem reveal d1">
-        <span class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-        <span class="ctxt">+880 1819 438089</span>
+      <a href="https://github.com/nullafia" target="_blank" class="citem reveal d1">
+        <span class="cico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span>
+        <span class="ctxt">github.com/nullafia</span>
       </a>
       <div class="srow-s reveal d2">
-        <a href="https://github.com/Afia Anjum Borsha220" target="_blank" class="sbtn" title="GitHub">
+        <a href="https://github.com/nullafia" target="_blank" class="sbtn" title="GitHub">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
         </a>
-        <a href="https://www.linkedin.com/in/Afia Anjum Borsha-silawat-076a25232" target="_blank" class="sbtn" title="LinkedIn">
+        <a href="#" target="_blank" class="sbtn" title="LinkedIn">
           <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/share/1KFpp7nATV/" target="_blank" class="sbtn" title="Facebook">
-          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/Afia Anjum Borshasilawat" target="_blank" class="sbtn" title="Instagram">
-          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-        </a>
-        <a href="https://wa.me/8801819438089" target="_blank" class="sbtn" title="WhatsApp">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
         </a>
       </div>
     </div>
     <div class="acard reveal">
       <div style="font-family:var(--mono);font-size:0.57rem;color:var(--text-d);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1.4rem">Current Status</div>
-      <div class="arow"><div class="adot"></div><span class="atxt">Open for collaboration</span></div>
-      <div class="arow"><div class="adot" style="animation-delay:0.3s"></div><span class="atxt">Based in Dhaka, Bangladesh</span></div>
+      <div class="arow"><div class="adot"></div><span class="atxt">Open for research collaboration</span></div>
+      <div class="arow"><div class="adot" style="animation-delay:0.3s"></div><span class="atxt">Available for internships</span></div>
+      <div class="arow"><div class="adot" style="animation-delay:0.6s"></div><span class="atxt">Based in Dhaka, Bangladesh</span></div>
       <div class="adiv"></div>
       <div class="asub">Response Time</div>
       <div class="aval">&lt; 24 hours</div>
@@ -570,10 +620,9 @@ footer p{font-family:var(--mono);font-size:0.6rem;color:var(--text-d);letter-spa
   </div>
 </section>
 
-<footer><p>© 2025 Afia Anjum Borsha</p></footer>
+<footer><p>© 2026 Afia Anjum Borsha · AI Researcher &amp; Security Analyst · BRAC University</p></footer>
 
 <script>
-/* ── MATRIX BACKGROUND ── */
 (function(){
   const c=document.getElementById('mc');
   const x=c.getContext('2d');
@@ -595,50 +644,40 @@ footer p{font-family:var(--mono);font-size:0.6rem;color:var(--text-d);letter-spa
   init();window.addEventListener('resize',init);setInterval(draw,60);
 })();
 
-/* ── ENTRANCE ANIMATION ── */
 const ent=document.getElementById('entrance');
 if(sessionStorage.getItem('v')){ent.style.display='none'}
 else{sessionStorage.setItem('v','1');setTimeout(()=>ent.classList.add('hide'),1900);setTimeout(()=>ent.style.display='none',2900)}
 
-/* ── NAV SCROLL ── */
 const navbar=document.getElementById('navbar');
 window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.scrollY>40);},{passive:true});
 
-/* ── MOBILE NAV DRAWER ── */
 const mt=document.getElementById('mt'),nd=document.getElementById('nd');
 mt.addEventListener('click',()=>{mt.classList.toggle('active');nd.classList.toggle('open');document.body.style.overflow=nd.classList.contains('open')?'hidden':'';});
 document.querySelectorAll('.nav-drawer a').forEach(a=>{a.addEventListener('click',()=>{mt.classList.remove('active');nd.classList.remove('open');document.body.style.overflow='';});});
 document.addEventListener('click',e=>{if(!e.target.closest('nav')&&!e.target.closest('.nav-drawer')){mt.classList.remove('active');nd.classList.remove('open');document.body.style.overflow='';}});
 
-/* ── SMOOTH SCROLL ── */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}});});
 
-/* ── REVEAL ON SCROLL ── */
 const ro=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')});},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.reveal,.reveal-left,.reveal-scale').forEach(el=>ro.observe(el));
 
-/* ── SKILL BARS ── */
 document.querySelectorAll('.sfill').forEach(b=>{b.style.width=(parseFloat(b.dataset.w)*100)+'%'});
 const so=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.querySelectorAll('.sfill').forEach(b=>b.classList.add('go'));});},{threshold:0.2});
 document.querySelectorAll('.sw').forEach(el=>so.observe(el));
 
-/* ── SCROLL PROGRESS BAR ── */
 const sp=document.getElementById('sp');
 window.addEventListener('scroll',()=>{const pct=(window.scrollY/(document.body.scrollHeight-window.innerHeight))*100;sp.style.width=pct+'%';},{passive:true});
 
-/* ── SECTION INDICATOR DOTS ── */
-const sections=['home','projects','education','skills','academic','contact'];
+const sections=['home','research','projects','education','skills','awards','contact'];
 const dots=document.querySelectorAll('.sec-dot');
 dots.forEach(d=>{d.addEventListener('click',()=>{const t=document.getElementById(d.dataset.section);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});});
 const sio=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){dots.forEach(d=>d.classList.remove('active'));const active=document.querySelector(`.sec-dot[data-section="${e.target.id}"]`);if(active)active.classList.add('active');}});},{threshold:0.4});
 sections.forEach(id=>{const el=document.getElementById(id);if(el)sio.observe(el)});
 
-/* ── PARALLAX BLOBS ── */
 const b1=document.getElementById('b1'),b2=document.getElementById('b2'),b3=document.getElementById('b3');
 let ticking=false;
 window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(()=>{const y=window.scrollY;b1.style.transform=`translateY(${y*0.14}px)`;b2.style.transform=`translateY(${-y*0.09}px)`;b3.style.transform=`translateY(${y*0.06}px)`;ticking=false;});ticking=true;}},{passive:true});
 
-/* ── CUSTOM CURSOR ── */
 if(window.matchMedia('(pointer:fine)').matches){
   const cdot=document.getElementById('cdot');const cring=document.getElementById('cring');let mx=0,my=0,rx=0,ry=0;
   document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cdot.style.left=(mx-3)+'px';cdot.style.top=(my-3)+'px';});
@@ -647,10 +686,8 @@ if(window.matchMedia('(pointer:fine)').matches){
   document.querySelectorAll('a,button,.pcard,.sbtn,.stag').forEach(el=>{el.addEventListener('mouseenter',()=>cring.classList.add('hover'));el.addEventListener('mouseleave',()=>cring.classList.remove('hover'));});
 }else{document.getElementById('cdot').style.display='none';document.getElementById('cring').style.display='none';}
 
-/* ── NAV ACTIVE HIGHLIGHT ── */
 document.querySelectorAll('.nav-drawer a').forEach(a=>{a.addEventListener('click',function(){document.querySelectorAll('.nav-drawer a').forEach(x=>x.style.color='');this.style.color='var(--acc)';setTimeout(()=>this.style.color='',1200);});});
 
-/* ── PARALLAX TEXT ── */
 (function(){
   const slowEls=document.querySelectorAll('.par-slow');
   const tiltEls=document.querySelectorAll('.par-tilt');
@@ -664,7 +701,6 @@ document.querySelectorAll('.nav-drawer a').forEach(a=>{a.addEventListener('click
   applyParallax();
 })();
 
-/* ── MOUSE TRACKING / GAZE EFFECT ── */
 (function(){
   const frame=document.getElementById('imgFrame');
   const wrap=document.getElementById('gazeWrap');
